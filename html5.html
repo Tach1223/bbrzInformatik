@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <form id="contactForm">
+        <h1> Kontakt </h1> <br>
+        <label for="name">First Name:</label> <br>
+        <input name="firstName" id="name" type="text"> <br>
+        <label for="email">Email:</label> <br>
+        <input type="text" id="email" name="email" autocomplete="off"> <br>
+        <label for="age">Alter:</label> <br>
+        <input type="number" id="age" min="18" max="99"> <br>
+        <label for="story">Tell us your story:</label> <br>
+        <textarea name="story" id="story" cols="33" rows="5">It was a dark and stormy night...</textarea> <br><br>
+
+
+        <button type="button" name="submit" onclick="submitForm()">Abgabe</button>
+    </form>
+
+    <div id="results"></div>
+</body>
+</html>
